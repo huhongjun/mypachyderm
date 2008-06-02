@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<component-definition>
+	<identification>
+		<localized-name>
+			<string lang="en">电话转盘菜单</string>
+		</localized-name>
+		<version>100</version>
+		<version-string>Version 1.0.0, Pachyderm 2.0</version-string>
+		<component-identifier>pachyderm.phonedial.phonedial_menu</component-identifier>
+		<conforming-identifiers>
+			<identifier>pachyderm.abstract.menu</identifier>
+		</conforming-identifiers>
+	</identification>
+	<binding-list>
+		<binding type="attribute" container="none">
+			<binding-key>text</binding-key>
+			<localized-name>
+				<string lang="en">介绍文本</string>
+			</localized-name>
+			<content-types>
+				<identifier>public.text</identifier>
+			</content-types>
+			<help-tag></help-tag>
+			<x-help-text>输入介绍文本. 这些文字默认显示在大圆的中央.</x-help-text>
+			<editable>YES</editable>
+			<default-association>
+				<association>
+					<!-- insert serialized association here -->
+				</association>
+			</default-association>
+			<limits>
+				<limit for="public.text" strict="YES">
+					<key>max-length</key>
+					<integer>3000</integer>
+				</limit>
+			</limits>
+		</binding>		
+		<binding type="attribute" container="array">
+			 <x-auto-instantiate>YES</x-auto-instantiate>
+			<binding-key>item</binding-key>
+			<localized-name>
+				<string lang="en">电话转盘数字</string>
+			</localized-name>
+			<content-types>
+				<identifier>pachyderm.phonedial.phonedial_item</identifier>
+				<identifier>pachyderm.abstract.item</identifier>
+			</content-types>
+			<help-tag></help-tag>
+			<x-help-text>电话转盘数字键</x-help-text>
+			<editable>YES</editable>
+			<default-association>
+				<association>
+					<!-- insert serialized association here -->
+				</association>
+			</default-association>
+			<limits>
+				<limit for="pachyderm.phonedial.phonedial_item" strict="YES">
+					<key>min-length</key>
+					<integer>10</integer>
+					<key>max-length</key>
+					<integer>10</integer>
+				</limit>
+			</limits>
+		</binding>
+	</binding-list>
+	<binding-validators>
+	</binding-validators>
+	<user-interface>
+		<preferred-binding-ordering>
+			<binding-key>text</binding-key>
+			<binding-key>item</binding-key>
+		</preferred-binding-ordering>
+	</user-interface>
+	<environment-support>
+		<environment>
+			<identifier>pachyderm.flash-environment</identifier>
+			<min-size>{0.0, 0.0}</min-size>
+			<max-size>{0.0, 0.0}</max-size>
+			<auto-layout>NO</auto-layout>
+			<accepts-children>NO</accepts-children>
+			<resources>
+				<resource></resource>
+			</resources>
+		</environment>
+	</environment-support>
+</component-definition>
