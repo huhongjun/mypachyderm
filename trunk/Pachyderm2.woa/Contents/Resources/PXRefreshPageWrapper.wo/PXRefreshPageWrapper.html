@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<webobject name="metaRefresh"></webobject>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>东方创远课件协同编辑平台 2.0(refresh)</title>
+	<link rel="stylesheet" type="text/css" media="all" href="/pachyderm/style/fouc-killer.css">
+	<style type="text/css" media="all">@import "/pachyderm/style/pachyderm-inner.css";<webobject name="hasLocalCSS"> @import "<webobject name="localCSS"></webobject>";</webobject></style>
+	<style type="text/css" media="screen">
+		#progressDisplayDiv {
+			display:none; height:100px;
+		}
+
+		#progressActionInitiator {
+			display: block;
+		}
+	</style>
+	<script language="Javascript" src="/pachyderm/javascript/pachyderm.js"></script>
+</head>
+
+<body onload="if( document.getElementById( 'default_text_box' ) ) document.getElementById( 'default_text_box' ).focus();">
+<!--
+   Copyright 2005-2006 The New Media Consortium,
+   Copyright 2000-2006 San Francisco Museum of Modern Art
+   
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+<div id="container">
+	<p id="owner"><span class="access">用户: </span><webobject name="OwnerName"></webobject></p>
+	
+	<p class="access">导航</p>
+	<ul id="breadcrumbs">
+<webobject NAME=BreadcrumbItems>		<li><webobject name="IsNotFirstBreadcrumb">&gt; </webobject><WEBOBJECT NAME=CrumbAction><webobject NAME=CrumbName></webobject></WEBOBJECT></li>
+</WEBOBJECT>    </ul>
+	
+	<p class="access">Site Navigation</p>
+	<ul id="sitenav">
+<webobject NAME=NavigationItems>		<webobject name=NavigationLI><webobject name=NavigationAction><webobject name=NavigationTitle></webobject></webobject></webobject></webobject>	</ul>
+	
+	<p class="access">上下文命令</p>
+	<ul id="ctxnav">
+<webobject name=CtxCommands>		<li><webobject name=CtxAction><webobject NAME=CtxLabel></webobject></webobject></li>
+</webobject>	</ul>
+	
+	<div id="pria-before"></div>
+	<div id="primaryarea">
+		<div id="guts">
+<webobject name="content"></webobject>
+		</div>
+	</div>
+	<div id="pria-after"></div>
+</div>
+
+<p id="copyright">POWERED BY 东方创远 &copy; COPYRIGHT 2005. <webobject name="SVNRevision"></webobject></p>
+
+</body>
+</html>

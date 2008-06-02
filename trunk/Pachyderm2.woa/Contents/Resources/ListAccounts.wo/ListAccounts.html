@@ -1,0 +1,19 @@
+<webobject name="PageWrapper">
+	<h1>帐号列表</h1>
+    <webobject name="UserCanViewPage">
+		<h2><webobject name="String1"></webobject> 帐号.</h2>
+		<ul>
+    	<webobject name="UserListRepetition">
+			<webobject name="Conditional1">
+    		<li><webobject name="lastnameString"></webobject>,
+                <webobject name="firstnameString"></webobject> 
+				( <webobject name="EditAccountHyperlink">
+					<webobject name="usernameString"></webobject>
+				</webobject>)</li>
+    		</webobject>
+		</webobject>
+		</ul>
+    </webobject>
+    
+    <webobject name="NotAuthorizedConditional">你未被授权使用帐号管理界面.</webobject>
+</webobject>

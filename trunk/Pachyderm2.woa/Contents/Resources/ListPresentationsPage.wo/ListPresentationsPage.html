@@ -1,0 +1,31 @@
+<webobject name="PageWrapper">
+			<h1>你的课件:</h1>
+			
+			<p class="access">全局操作</p>
+			<ul id="presgact">
+				<li><webobject name="Hyperlink1">新课件</webobject></li>
+			</ul>
+			
+			<div id="presvopt">
+			<p>显示方式: </p>
+			<ul>
+				<li><webobject NAME=ThumbsMode>缩略图</webobject> | </li>
+				<li><webobject NAME=ListMode>列表</webobject></li>
+			</ul>
+			</div>
+			
+			<webobject name=PresentationsList><webobject name="Presentations">				<div class="presentation">
+					<webobject name="EditLink"><img src="/pachyderm/images/presentation_mini.jpg" width="113" height="83" alt="" /></webobject>
+					<h2><webobject name="PresentationName"></webobject></h2>
+					<p>修改: <webobject name="LastModified"></webobject><br />
+					<webobject name="CountOfScreens"></webobject> 页面</p>
+					<ul>
+<WEBOBJECT name="PresentationIsPublished">						<li><WEBOBJECT NAME=Hyperlink2>查看</WEBOBJECT> | </li>
+</WEBOBJECT>						<li><webobject name="EditLink">编辑</webobject> | </li>
+						<li><webobject name="DeleteLink">删除</webobject></li>
+					</ul>
+				</div>
+</webobject>				<div class="clearf" />
+			</div>
+			</webobject>
+</webobject>
