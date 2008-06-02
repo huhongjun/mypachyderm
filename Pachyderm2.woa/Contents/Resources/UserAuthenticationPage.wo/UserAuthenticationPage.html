@@ -1,0 +1,44 @@
+<webobject name="PageWrapper">
+	<img id="pachydermlogo" src="/pachyderm/images/pachyderm-logoAuthoring.gif" alt="Pachyderm 2.0" />
+	<div id="login">
+		<h4>欢迎使用东方创远课件在线编辑平台</h4> 
+		<p class="login_text">请输入用户名和登录密码。</p>
+		<webobject name="LoginForm">
+			<webobject name="Conditional1">
+				<div style="color:red">
+					错误的用户名/密码。
+				</div>
+				
+			<!-- <webobject name="Hyperlink1">Forget your password?</webobject> --> </webobject>
+			<p>
+				<label for="name">用户:</label> 
+				<br />
+				<webobject name="UsernameField">
+				</webobject>
+			</p>
+			<p>
+				<label for="password">密码:</label> 
+				<br />
+				<webobject name="PasswordField">
+				</webobject>
+			</p>
+			<p>
+				<input type="submit" value="登录" /> 
+			</p>
+		</webobject>
+		<ul>
+			<li>
+				<a href="http://www.edlt.com/">关于东方创远</a>
+			</li>
+			<li>
+				<a href="http://www.edlt.com/authors.html">关于课件在线编辑平台</a>
+			</li>
+		</ul>
+	</div>
+	<div id="links">
+		课件在线平台由 <a href="http://www.edlt.com/">东方创远教育科技有限公司</a>荣誉开发。
+		<div class="sponsorlogo">
+			<a href="http://www.edlt.com/"><img src="/pachyderm/images/edlt-logoLogin.gif" alt="东方创远" /></a> 
+		</div>
+	</div>
+</webobject>

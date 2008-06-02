@@ -1,0 +1,82 @@
+<webobject name=PageWrapper>
+	<h1>编辑<span class="notuc">&ldquo;<WEBOBJECT NAME=DocumentEditName></WEBOBJECT>&rdquo;</span>:</h1>
+	<webobject name=Conditional3>
+		<script type="javascript">
+			window.open("<webobject name=String1></webobject>");
+			return false;
+		</script>
+	</webobject>
+	<webobject name=EditPresInfoLink>编辑名称/描述</webobject>
+	<div id="main_options">
+		<div id="main_description">
+			<p>
+				以下是关系屏幕的列表在这个介绍中的使用。
+				在这里您可以改变屏幕演示的“主屏幕”，编辑屏幕上的内容或从这个演示文稿中删除屏幕。
+				屏幕缩图是模板设计的典型。
+			</p>
+		
+			<p>
+				<webobject name=AddScreenLink>添加页面到课件 <img src="/pachyderm/images/add_button.gif" alt="add" /></webobject>
+			</p>
+		</div>
+		<div id="main_links">
+			<webobject name="ViewPresentationLink2">发布课件</webobject>
+			<WEBOBJECT NAME=isPublished>
+				<webobject NAME=ViewPresentationLink>查看课件</webobject>
+				<webobject NAME=zipURL>下载课件(zip格式)</webobject>
+			</WEBOBJECT>
+			<div id="view_by">
+				<b>显示方式:</b><webobject name=IconsView>缩略图</webobject> | <webobject name=ListView>列表</webobject>
+			</div>
+		</div>
+	</div>
+	<webobject name=IconsView2>		
+		<div id="home_screen">
+			<h2>首页</h2>
+			<webobject name="PrimaryScreenSummary"></webobject>
+			<p id="home_screen_description">主屏幕是开始放映你的演示文稿。在任何时间点击“Make Home”转换任何联系屏幕下面进入主屏幕.</p>
+		</div>
+		<div id="linked_screens">
+			<h2>已链接页面</h2>
+			<em>点击屏幕上的标题或缩图编辑。</em>
+			<webobject name=OtherScreens>
+				<webobject name="SecondaryScreenSummary"></webobject>
+			</webobject>
+		</div>
+	</webobject>
+	<webobject name=ListView2>
+		<h2 id="lscrhead">屏幕:</h2>
+			<table id="scrstable">
+			<colgroup><col id="titlecol" /><col id="datemodcol" /><col id="optcol" /></colgroup>
+			<thead>
+				<tr><th>名称</th><th>修改日期</th><th>选项</th></tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><webobject name="PrimaryEditScreenLink"><webobject name=PrimaryTitle></webobject></webobject></td>
+					<td><webobject name=PrimaryModificationDate></webobject></td>
+					<td>
+						<ul>
+							<li><webobject name=PrimaryEditScreenLink>编辑<span class="access"> 屏幕</span></webobject></li>
+							
+						</ul>
+					</td>
+				</tr>
+				<webobject name="OtherScreens">					
+				<tr>
+					<td><webobject name="EditScreenLink"><webobject name=ScreenTitle></webobject></webobject></td>
+					<td><webobject name=ScreenModificationDate></webobject></td>
+					<td>
+						<ul>
+							<li><webobject name=MakeHomeLink>设定为首页<span class="access"> Screen</span></webobject> | </li>
+							<li><webobject name=EditScreenLink>编辑<span class="access"> Screen</span></webobject> | </li>
+							<li><webobject name=DeleteScreenLink>删除<span class="access"> Screen</span></webobject></li>
+						</ul>
+					</td>
+				</tr>
+				</webobject>				
+			</tbody>
+		</table>
+	</webobject>
+	<div class="clearf"></div>
+</WEBOBJECT>

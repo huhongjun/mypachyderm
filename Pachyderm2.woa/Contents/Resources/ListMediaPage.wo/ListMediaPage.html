@@ -1,0 +1,119 @@
+<webobject name="PageWrapper">
+	<h1>媒体:</h1>		
+	<p class="access">Global Actions</p>
+	<!--
+	<ul id="medact">
+		<li><webobject name=AddGenericLink>Add Media</webobject>:
+			<ul>
+				<li><webobject name=AddOneLink>One File</webobject></li>
+				<li><webobject name=AddMultiLink>Multiple Files</webobject></li>
+			</ul>
+		</li>
+	</ul>
+	-->
+	<div id="meddesc">
+		<div class="meddescp">
+			课件在线编辑系统中的媒体文件包括图片文件(jpg, gif), 音频文件(mp3, swf) 和 视频文件(mov)。
+		</div>
+		<div class="meddescp">
+			You have access to the files you've uploaded into the Pachyderm system as well as temporary access to others who have not marked their upoaded files as 'Private'.
+			(Be aware that you may use others' non-private files in your presentation, but that the owner may delete them from the Pachyderm system at any time.
+			In that case, your already-published presentations using such files will not be affected,
+			but any presentations in production that use others' deleted files will need to have replacement media chosen.)
+		</div>
+	</div>
+
+	<div id="medarea">
+		<webobject name=NoQuery>
+			<p id="mednote">注意: 你自动显示的文件太多. 请浏览或搜索.</p>
+			<webobject name=BrowseForm>
+				<p class="fprompt">浏览媒体文件:</p>
+				<p><label class="access" for="barea">区域: </label>
+				<select id="barea">
+					<option value="1">所有媒体文件</option>
+					<option value="2">课件</option>
+					<option value="3">...</option>
+				</select></p>
+				<p><input type="submit" /></p>
+			</webobject>
+
+			<webobject name=SearchFrom>
+				<p class="fprompt">搜索媒体文件:</p>
+				<p>
+					<WEBOBJECT NAME=SearchField></WEBOBJECT>
+					<WEBOBJECT NAME=SearchButton></WEBOBJECT>
+					<br />
+<!--
+					<span class="medinputs">
+						<input type="radio" name="whos" value="mine" />Mine
+						<input type="radio" name="whos" value="everyones" />Everyone's
+					</span>
+-->
+				<p>
+			</webobject>
+<!--
+			<p>
+				<a href="#">Show all of my media files</a> (#)<br />
+				<span class="medsub">(Files I have uploaded into the Pachyderm system)</span>
+			</p>
+			<p>
+				<a href="#">Show everyone's media files</a> (#)<br />
+				<span class="medsub">(Non-private files others at my location have uploaded into the Pachyderm system)</span>
+			</p>
+-->
+			<hr />
+			<p class="fprompt">添加新媒体文件:</p>
+<!--
+			<p class="medsub">
+				(Choose a file from your computer to import into Pachyderm.
+				For graphic jpg files, please ensure that the file dimensions are at least 1280x1024 pixels and movie files are 320x240.)
+			</p>
+			<div id="progressActionInitiator">
+				<webobject name=ImportForm>
+					<input type="file" name="file" />
+					<input type="submit" name="submit" value="Upload" onclick="return click_button(); />
+				</webobject>
+			</div>
+		
+			<div id="progressDisplayDiv" style="display:hidden; height:500px; margin-left:150px; align:center;" align="center">
+				<h3>Uploading your image...</h3>
+				<img src="/pachyderm/images/WorkingAnimation.gif" alt="Working..." width="45" height="60" />
+			</div>
+-->
+
+			<p>
+				<webobject name="AddOneLink">上载单个文件</webobject> 或, <webobject name=AddMultiLink>一次导入多个文件</webobject>
+			</p>
+		</webobject>	
+		<webobject name=HasQuery>
+			<webobject name="hasMultiBatches">
+				<p>页 <webobject name="currentBatchIndex"></webobject> of 
+				<webobject name="batchCount"></webobject> (<webobject name="allObjectsCount"></webobject> items found<webobject name="Conditional7"> for &quot;<webobject name="String1"></webobject>&quot;</webobject>). <webobject name="displayPreviousBatch">Previous</webobject> | 
+				<webobject name="displayNextBatch">下一页</webobject> | 
+				<webobject name="newSearch">开启新的搜索</webobject></p>
+			</webobject>
+			<webobject name="noMultiBatches"><webobject name="Conditional4"><webobject name="String4"></webobject> items found<webobject name="Conditional5"> for &quot;<webobject name="String3"></webobject>&quot;</webobject>.</webobject>
+			<webobject name="Conditional3">
+				<p>No Search Results Found<webobject name="Conditional6"> for &quot;<webobject name="String2"></webobject>&quot;</webobject>.</p>
+			</webobject>
+				<p><webobject name="newSearch2">Start New Search</webobject></p>
+			</webobject>
+			<webobject name="Conditional2">
+				<webobject NAME=ResList>
+					<div class="medres">
+						<WEBOBJECT NAME=PreviewImage></WEBOBJECT>
+						<p><webobject name="ResTitle"></webobject><webobject name="ResourceNotExists"> (asset missing)</webobject></p>
+						<ul>
+							<li><webobject NAME=InspectLink>明细</webobject></li>
+							<WEBOBJECT NAME=Conditional1>
+								<li> | <webobject NAME=EditLink>编辑</webobject></li>
+								<li> | <webobject NAME=DeleteLink>删除</webobject></li>
+							</WEBOBJECT>
+						</ul>
+					</div>
+				</webobject>	
+			</webobject>
+		</webobject>
+	</div>
+	<div class="clearf"></div>
+</webobject>

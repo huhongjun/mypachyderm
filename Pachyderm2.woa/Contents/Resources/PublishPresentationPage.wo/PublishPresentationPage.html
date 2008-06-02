@@ -1,0 +1,150 @@
+<webobject name="PageWrapper">
+	<h1>发布 <span class="notuc">&ldquo;
+			<webobject name="DocumentPublishName">
+			</webobject>
+			&rdquo;</span>:</h1> 
+	<div id="pressummary">
+		<h2 class="access">发布概览</h2> <img src="/pachyderm/images/presentation_mini.jpg" width="113" height="83" alt="" /> 
+
+	<webobject name=LanguageForm>
+		<p><label>语言:</label> <webobject name="PopUpButton1"></webobject><webobject name="LanguageSelectionButton"></webobject></p>
+	</webobject>
+		<p>
+			&ldquo;
+			<webobject name="DocumentPublishName">
+			</webobject>
+			&rdquo;
+		</p>
+		<p>
+			本课件包含 
+			<webobject name="ScreenCount">
+			</webobject>
+			页面:
+		</p>
+		<ul>
+			<webobject name="ScreensRepetition">
+				<li>
+					<webobject name="ScreenTitle">
+					</webobject>
+				</li>
+			</webobject>
+		</ul>
+	</div>
+	<div id="publopts">
+		<webobject name="Conditional3">
+			<!-- <h2 class="access">Publishing Options</h2> -->
+			<h2>准备发布?</h2>
+			<webobject name="PublishForm">
+			<!--
+				<h3><span class="optnum">1</span> Presentation Folder Name: (not implemented in this version)</h3> 
+				<p>
+					This is the folder where your presentation will be published. Be sure to use only numbers, letters or underscore in the name.
+				</p>
+				<h3><span class="optnum">2</span> Choose Platform: (not implemented in this version)</h3> 
+				<p>
+					Select your platform of choice from CD, Web site or kiosk. A CD creates a 640 x 480 Flash movie, etc…
+				</p>
+				<h3><span class="optnum">3</span> Create ZIP: (not implemented in this version)</h3> 
+				<p>
+					Select "yes" if you wish to create a downloadable zip file of the entire presentation. This will enable you to download the finished presentation to your local machine for testing or distribution. Be aware that this file can be very large.
+				</p>
+				<h3><span class="optnum">4</span> Description Information: (not implemented in this version)</h3> 
+				<p>
+					View/Edit description information.
+				</p>
+				<h3><span class="optnum">5</span> Publish Presentation</h3>
+				<p>
+					Proceed with the publication process. This will gather resources into a web directory, and prepare your presentation for viewing by other users.
+				</p>
+			-->
+				<p>请只点击"发布"按钮一次. 发布操作需要1-2分钟. 在后续页面, 隔一段时间点击"刷新" 直到状态为"已完成".</p>
+				<p>
+					<webobject name="PublishButton">
+					</webobject>
+				</p>
+
+                <webobject name="Conditional1"><p>发布之前, 你可能想知道这些文件当前不可用:</p>
+                <ul>
+                	<webobject name="Repetition2"><li><webobject name="String1"></webobject></webobject></li>
+                </ul></webobject>
+			</webobject>
+		</webobject>
+		<webobject name="Conditional2">
+			<webobject name="Conditional4">
+				<div id="main_links">
+					<webobject name="Hyperlink3">显示课件</webobject>
+					<webobject NAME="Hyperlink2">编辑课件</webobject>
+					<webobject NAME="zipURL">下载课件(.zip格式)</webobject>
+				</div>
+			</webobject>
+			<div>
+				<!--<h2>Building your presentation...</h2>-->
+				<h3>发布状态:</h3>
+				<webobject name="PresentationIsBuilding">
+					<p class="status"><em><webobject name="String2"></webobject></em> <webobject name="Conditional5">[ <webobject name="Hyperlink1">刷新</webobject> ]</webobject></p>
+					<div align="center"><img src="/pachyderm/images/WorkingAnimation.gif" alt="Working..." width="45" height="60" /></div>
+				</webobject>
+				<webobject name="Conditional4"><p>This presentation was sent for publishing (with .zip file) at <webobject name="PublishStartDate"></webobject> and <b><webobject name="BuildStatus"></webobject></b>.</p></webobject>
+			</div>
+			<!--
+			<h2 class="access">Publishing Status</h2> 
+			<p>
+				Status: 
+				<webobject name="String2">
+				</webobject>
+				<webobject name="Hyperlink1">Refresh</webobject>
+			</p>
+			<webobject name="Conditional4">
+				<ul>
+					<li>
+						<webobject name="Hyperlink2">
+							Return to Presentation Editor
+						</webobject>
+					</li>
+					<li>
+						<webobject name="Hyperlink3">
+							View Published Presentation
+						</webobject>
+					</li>
+					<li>
+						<webobject name="zipURL">
+							Download .zip Archive of Presentation
+						</webobject>
+					</li>
+				</ul>
+			</webobject>
+			<div>
+				Current phase name: 
+				<webobject name="String3">
+				</webobject>
+			</div>
+			-->
+			<div>
+				<a href="#" onclick="
+					if( document.getElementById( 'output_details_arrow' ).src.substr( -19 ) == 'ArrowRight-blue.gif' )
+					{
+						document.getElementById( 'output_details_arrow' ).src = '/pachyderm/images/ArrowDown-blue.gif';
+						document.getElementById( 'output_details_list' ).style.display = 'block';
+					}
+					else
+					{
+						document.getElementById( 'output_details_arrow' ).src = '/pachyderm/images/ArrowRight-blue.gif';
+						document.getElementById( 'output_details_list' ).style.display = 'none';
+					}
+				"><img id="output_details_arrow" src="/pachyderm/images/ArrowRight-blue.gif" /> View output details</a>
+			</div>
+			<ul id="output_details_list" style="display: none;">
+				<li>构建明细:</li>
+                <li>当前阶段名称: <webobject name="String3"></webobject></li>
+				<webobject name="Repetition1">
+					<li>
+						<webobject name="String4">
+						</webobject>
+					</li>
+				</webobject>
+			</ul>
+		</webobject>
+	</div>
+	<div class="clearf">
+	</div>
+</webobject>

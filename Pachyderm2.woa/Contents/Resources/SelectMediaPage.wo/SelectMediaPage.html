@@ -1,0 +1,48 @@
+<webobject name="PageWrapper"> 			
+	<h1>搜索媒体文件:</h1>		
+	<p class="access">全局操作</p>
+	<ul id="medact">
+		<li><webobject NAME=AddMediaLink>添加新媒体</webobject></li>
+	</ul>	
+	<div id="medarea">
+		<webobject name="performSearch">
+			<webobject name="hasDataSource">
+				<webobject name="hasMultiBatches">
+					<p>页面 <webobject name="currentBatchIndex"></webobject> of 
+					<webobject name="batchCount"></webobject> 
+					(<webobject name="allObjectsCount"></webobject> 个项目找到<webobject name="hasSearchTerms"> for &quot;<webobject name="searchTerms"></webobject>&quot;</webobject>). <webobject name="displayPreviousBatch">Previous</webobject> | 
+					<webobject name="displayNextBatch">Next</webobject> | 
+					<webobject name="newSearch">开始新的搜索</webobject></p>
+				</webobject>
+				<webobject name="noMultiBatches">
+				<div class="clearf">
+					<webobject name="noSearchResults">
+						<p>没有找到符合条件的项目，<webobject name="hasSearchTerms">条件 &quot;<webobject name="searchTerms"></webobject>&quot;</webobject>.</p>
+					</webobject>
+				</div>
+					<webobject name="hasSearchResults"><webobject name="objectCount"></webobject> results found<webobject name="hasSearchTerms"> for &quot;<webobject name="searchTerms"></webobject>&quot;</webobject>.</webobject><p><webobject name="newSearch">开始新的搜索</webobject></p>
+				</webobject>
+				<webobject name="hasSearchResults">
+					<webobject name="MediaItems">
+						<div class="medres">
+							<webobject name="SelectResource"><webobject name="ResourceImage"></webobject>
+							</webobject>
+							<p><webobject name="ResourceTitle"></webobject> <webobject name="ResourceNotExists">(文件丢失)</webobject></p>
+<webobject name="ResourceExists">							
+							<ul>
+								<li><webobject name="InspectLink">明细</webobject></li>
+								<li><webobject name="SelectResource">选择</webobject></li>
+							</ul></webobject>
+						</div>
+					</webobject>
+				</webobject>
+			</webobject>
+			<webobject NAME=NoDS>
+				<p><label>输入搜索条件:</label> <webobject name=SearchField></webobject></p>
+				<p><input type="submit" /><webobject name="SubmitButton1"></webobject>
+			</webobject> 
+			<webobject name="Conditional1"><br><p></p><webobject name="selectNothing">终止选择</webobject><p></p></webobject>
+		</webobject>
+	</div>
+	<div class="clearf"></div>
+</webobject>

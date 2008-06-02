@@ -1,0 +1,27 @@
+﻿<webobject name="PageWrapper">
+	<webobject name=EditForm>
+	<div id="scrovr">
+		<webobject name=ScreenRefImage></webobject><br /><webobject NAME=RootComponentName></webobject>
+		<p><label>屏幕名称：</label> <webobject name=ScreenTitle></webobject></p>
+		<p><label>注意：</label> <webobject name=ScreenNotes></webobject></p>
+		<p><label>编辑语言：</label> <webobject name="PopUpButton1"></webobject><webobject name="LanguageSelectionButton"></webobject></p>
+		<p><webobject name="SaveContinue"></webobject> <input type="submit" value="Save/Done" /> <webobject name="SubmitButton1"></webobject></p>
+		<p><webobject name="PreviewButton"></webobject></p>
+	</div>
+
+	<p class="access">内容命令</p>
+	<ul id="ctxnav">
+<webobject name=CtxCommands>		<li><webobject name=CtxAction><webobject NAME=CtxLabel></webobject></webobject></li>
+</webobject></ul>
+
+	<div id="pria-before"></div>
+	<div id="primaryarea">
+		<div id="guts">
+		<div id="collapse_all"><span onclick="expand_all();">扩展所有</span><span id="collapse_all_separater"> | </span><span onclick="collapse_all();">展开所有</span></div>
+		
+<WEBOBJECT NAME=RootEditor></WEBOBJECT>
+		</div>
+	</div>
+	<div id="pria-after"></div>
+	</webobject>
+</webobject>

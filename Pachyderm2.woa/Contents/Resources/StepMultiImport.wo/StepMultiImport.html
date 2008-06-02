@@ -1,0 +1,42 @@
+<h3>第1步: 导入文件</h3>
+
+<webobject name=ImportForm>
+
+	<h2>请在你的电脑上选择要导入的文件:</h2>
+	<p>注意：当前课件只能使用如下格式的文件:</p>
+	<ul>
+		<li>图片 (.gif, .jpg)</li>
+		<li>视频 (.mov, .swf)</li>
+		<li>音频 (.mp3, .swf)</li>
+	</ul>
+
+<p><b>媒体文件指南 Guidelines</b><br />
+<b>图片:</b> For best results, especially for images used in zoom templates, use images that are up to 2560 pixels high and/or up to 2550 pixels wide. Smaller images will not fill the zoom template. Pachyderm will resize your image for thumbnails and smaller spots.<br />
+<br /><b>Video and Audio:</b> Video files should be of standard aspect ratio (320 x 240 pixels). Video and audio files should be optimized to be as small in file size as possible; files larger than 3 or 4 MB will cause your presentation to load slowly.</p>
+
+<div id="progressActionInitiator">
+	
+	<div id="zipUploadWidget">
+		<h4>上载.zip格式压缩包中的一组文件:</h4>
+		<p><WEBOBJECT NAME=Upload1></WEBOBJECT></p>
+	</div>
+	<div id="multiFileUploadWidgets">
+		<h4>上载最多5个独立文件:</h4>
+		<p><webobject name=AddMediaUploadWidget1></webobject></p>
+		<p><webobject name=AddMediaUploadWidget2></webobject></p>
+		<p><webobject name=AddMediaUploadWidget3></webobject></p>
+		<p><webobject name=AddMediaUploadWidget4></webobject></p>
+		<p><webobject name=AddMediaUploadWidget5></webobject></p>
+	</div>
+</div>
+
+<div id="progressDisplayDiv" style="display:none;">
+		<h2>正在上载图片...</h2>
+		<div align="center"><img src="/pachyderm/images/WorkingAnimation.gif" alt="Working..." width="45" height="60" /></div>
+</div>
+
+
+	<p><webobject name=MessageText></webobject></p>
+	
+	<input type="submit" name="Next" value="下一个" onclick="return click_button();" /><webobject name=SubmitButton2></webobject>
+</webobject>

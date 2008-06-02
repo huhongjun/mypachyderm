@@ -1,0 +1,38 @@
+<ul>
+	<webobject name="BindingRepetition">
+		<li>
+			<webobject name="Generic1">
+			<webobject name="EncloseSubeditor">
+				<div class="beditor">
+					<div class="beditor_head">
+						<div class="bstep">
+							<a class="collapser" onclick="if( this.parentNode.parentNode.parentNode.childNodes[1].className == 'beditor_body' ) toggle_display( this.parentNode.parentNode.parentNode.childNodes[1], this.childNodes[0], this.childNodes[1] ); else toggle_display( this.parentNode.parentNode.parentNode.childNodes[3], this.childNodes[1], this.childNodes[2] );">
+								<img src="/pachyderm/images/ArrowDown-black.gif" />
+								收缩
+							</a>
+							<span class="bref"><span class="access">步骤 </span>
+								<webobject name="StepValue">
+								</webobject>
+							</span><span class="access">:</span> 
+							<webobject name="BindingName">
+							</webobject>
+						</div>
+					</div>
+					<div class="beditor_body">
+						<div class="bfields">
+							<webobject name="InlineEditor">
+							</webobject>
+						</div>
+						<div class="float_killer"></div>
+					</div>
+				</div>
+			</webobject>
+			<webobject name="NakedSubeditor">
+				<div class="bfields">
+					<webobject name="InlineEditor">
+					</webobject>
+				</div>
+			</webobject></webobject>
+		</li>
+	</webobject>
+</ul>

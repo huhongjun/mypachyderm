@@ -1,0 +1,74 @@
+﻿<WEBOBJECT NAME=PageWrapper>
+	<h2>找到屏幕：</h2>
+	<div id="box-left">
+		<!-- <span class="fakebutton"><a href="addscreen.html">+ 
+          ADD SCREEN</a></span> -->选择从alphebetized下面的列表的一个屏幕上或查询在一屏幕上的权利。</b><br />
+    	<br />
+        <br />
+        <br />
+        <p><!-- <span class="fakebutton"><a href="#" title="This will hook into other people's collections">FIND MORE</a></span> --> </p>
+  	</div>
+   	<!-- end box left -->
+    <webobject name="findScreenForm"> 
+  	<div id="box-right"> 
+      	<p><strong>查询屏幕：</strong></p>
+          	Title:
+        <webobject name=searchQueryByTitle></webobject>
+		<webobject name=SubmitButton1></webobject> 
+  	</div>
+	<!-- <div>List All Screens (in this presentation | in all presentations)</div> -->
+    <!-- end box-right -->
+	<!---	
+	<ul class="findlist">
+		<webobject name="screens">
+			<li><webobject name="selectScreenHyperlink"><webobject name="screenTitle"></webobject></webobject></li>
+		</webobject>
+	</ul>
+	-->
+<!-- new code -->
+	<br><br>
+	<div class="clearf"></div>
+	<div id="box-bottom">
+    	<h2>目标屏幕</h2>
+    	<hr>
+    	<webobject name="hasMultiBatches">
+    		<p>页 
+    		<webobject name="currentBatchIndex"></webobject>的
+    		<webobject name="batchCount"></webobject> 
+（<webobject name="allObjectsCount"></webobject>项目建立<webobject name="hasSearchTerms">&quot;<webobject name="searchTerms"></webobject>&quot;</webobject>）。<webobject name="displayPreviousBatch">前一页</webobject> | 
+    		<webobject name="displayNextBatch">下一页</webobject>
+    		</p>
+    	</webobject>
+    	<webobject name="noMultiBatches">
+    		<div class="clearf">
+    		<webobject name="noSearchResults">
+    			<p>没有找到屏幕结果<webobject name="hasSearchTerms">&quot;
+    				<webobject name="searchTerms"></webobject>&quot;
+    			</webobject>。</p>
+    		</webobject>
+    		</div>
+    		<webobject name="hasSearchResults">
+    			<webobject name="objectCount"></webobject>结果建立<webobject name="hasSearchTerms">&quot;
+    				<webobject name="searchTerms"></webobject>&quot;
+    			</webobject>。
+    		</webobject><p>
+    		</p>
+    	</webobject>
+    	<webobject name="hasSearchResults">
+    		<webobject name="screens">
+    			<div class="medres">
+    				<b><webobject name="screenTitle"></webobject></b><br>
+    				<webobject name="selectScreen">
+    					<webobject name="screenImage"></webobject>
+    				</webobject><p><em>上次修改：<webobject name="dateModified"></webobject></em></p>	
+    			</div>
+    		</webobject>
+    	</webobject>
+    	<div class="clearf"></div>
+	<webobject name="SubmitButton2"></webobject>
+ 	</div>
+	</webobject>
+
+    <!-- end new code -->
+
+</WEBOBJECT>

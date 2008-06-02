@@ -1,0 +1,53 @@
+<webobject name="PageWrapper">
+	<img id="pachydermlogo" src="/pachyderm/images/pachyderm-logoAuthoring.gif" alt="Pachyderm 2.0" />
+	
+	<div id="main_links">
+		<h2 id="welcome">欢迎, <webobject NAME=PersonFullName></webobject>:</h2>
+		<span id="edit_link"><WEBOBJECT NAME="editAccountLink">编辑帐号</WEBOBJECT></span>
+		
+		<p>查看/编辑:</p>
+		
+		<div class="image_link">
+			<WEBOBJECT NAME=PresentationsLink>
+				课件<br />
+				<img src="/pachyderm/images/presentation_link.gif" alt="Presentations" />
+			</WEBOBJECT>
+		</div>
+		
+		<div class="image_link">
+			<WEBOBJECT NAME=MediaLink>
+				媒体<br />
+				<img src="/pachyderm/images/media_link.jpg" alt="Media" />
+			</WEBOBJECT>
+		</div>
+	</div>
+
+	<div id="other_links">
+		<p>
+			<a href="http://www.edlt.com" target="_blank">使用指南</a><br />
+			在这儿可以找到如何使用本系统创建、发布课件的帮助信息.
+		</p>
+		
+		<p>
+			<a href="http://www.pachyderm.org/" target="_blank">关于课件在线编辑平台</a>
+		</p>
+		
+		<p>
+			<a href="mailto:pachybug@edlt.com">联系我们</a>
+		</p>
+
+		<webobject name="Conditional1">
+			<!--- <p>
+				<webobject NAME=createAccountInvitation>CREATE ACCOUNT INVITATION</webobject>
+			</p>
+			<webobject name="Hyperlink2">CREATE NEW&nbsp;ACCOUNT</webobject><p>
+				<webobject name="Hyperlink1">ADMINISTER&nbsp;ACCOUNTS</webobject>
+			</p> -->
+			<p><webobject name="AdminHome">系统管理</webobject></p>
+		</webobject>
+		
+		<p>
+			<a href="#"><webobject name="LogOut">登出</webobject></a>
+		</p>
+	</div>
+</webobject>
