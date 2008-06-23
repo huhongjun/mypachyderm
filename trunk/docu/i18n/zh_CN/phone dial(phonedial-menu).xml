@@ -2,7 +2,7 @@
 <component-definition>
 	<identification>
 		<localized-name>
-			<string lang="en">电话拨盘菜单</string>
+			<string lang="en">电话转盘菜单</string>
 		</localized-name>
 		<version>100</version>
 		<version-string>Version 1.0.0, Pachyderm 2.0</version-string>
@@ -13,16 +13,16 @@
 	</identification>
 	<binding-list>
 		<binding type="attribute" container="none">
-			<binding-key>正文</binding-key>
+			<binding-key>text</binding-key>
 			<localized-name>
-				<string lang="en">介绍文字</string>
+				<string lang="en">介绍文本</string>
 			</localized-name>
 			<content-types>
 				<identifier>public.text</identifier>
 			</content-types>
 			<help-tag></help-tag>
-			<x-help-text>输入介绍文字。这段文字将默认在大圆的中心。</x-help-text>
-			<editable>是</editable>
+			<x-help-text>输入介绍文本. 这些文字默认显示在大圆的中央.</x-help-text>
+			<editable>YES</editable>
 			<default-association>
 				<association>
 					<!-- insert serialized association here -->
@@ -30,24 +30,24 @@
 			</default-association>
 			<limits>
 				<limit for="public.text" strict="YES">
-					<key>最大-长度</key>
+					<key>max-length</key>
 					<integer>3000</integer>
 				</limit>
 			</limits>
 		</binding>		
 		<binding type="attribute" container="array">
-			 <x-auto-instantiate>是</x-auto-instantiate>
-			<binding-key>项目</binding-key>
+			 <x-auto-instantiate>YES</x-auto-instantiate>
+			<binding-key>item</binding-key>
 			<localized-name>
-				<string lang="en">电话拨盘数字</string>
+				<string lang="en">电话转盘数字</string>
 			</localized-name>
 			<content-types>
 				<identifier>pachyderm.phonedial.phonedial_item</identifier>
 				<identifier>pachyderm.abstract.item</identifier>
 			</content-types>
 			<help-tag></help-tag>
-			<x-help-text>电话拨盘数字</x-help-text>
-			<editable>是</editable>
+			<x-help-text>电话转盘数字键</x-help-text>
+			<editable>YES</editable>
 			<default-association>
 				<association>
 					<!-- insert serialized association here -->
@@ -55,9 +55,9 @@
 			</default-association>
 			<limits>
 				<limit for="pachyderm.phonedial.phonedial_item" strict="YES">
-					<key>最小-长度</key>
+					<key>min-length</key>
 					<integer>10</integer>
-					<key>最大-长度</key>
+					<key>max-length</key>
 					<integer>10</integer>
 				</limit>
 			</limits>
@@ -67,8 +67,8 @@
 	</binding-validators>
 	<user-interface>
 		<preferred-binding-ordering>
-			<binding-key>正文</binding-key>
-			<binding-key>项目</binding-key>
+			<binding-key>text</binding-key>
+			<binding-key>item</binding-key>
 		</preferred-binding-ordering>
 	</user-interface>
 	<environment-support>
@@ -76,8 +76,8 @@
 			<identifier>pachyderm.flash-environment</identifier>
 			<min-size>{0.0, 0.0}</min-size>
 			<max-size>{0.0, 0.0}</max-size>
-			<auto-layout>不</auto-layout>
-			<accepts-children>不</accepts-children>
+			<auto-layout>NO</auto-layout>
+			<accepts-children>NO</accepts-children>
 			<resources>
 				<resource></resource>
 			</resources>

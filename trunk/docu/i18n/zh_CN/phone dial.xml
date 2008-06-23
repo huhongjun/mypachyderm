@@ -1,8 +1,8 @@
-﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <component-definition>
 	<identification>
 		<localized-name>
-			<string lang="en">电话拨号盘菜单屏幕</string>
+			<string lang="en">电话转盘屏幕</string>
 		</localized-name>
 		<version>100</version>
 		<version-string>Version 1.0.0, Pachyderm 2.0</version-string>
@@ -13,7 +13,7 @@
 	</identification>
 	<binding-list>
 		<binding type="attribute" container="none">
-			<binding-key>显示标题</binding-key>
+			<binding-key>displayTitle</binding-key>
 			<localized-name>
 				<string lang="en">显示标题</string>
 			</localized-name>
@@ -21,8 +21,8 @@
 				<identifier>public.text</identifier>
 			</content-types>
 			<help-tag></help-tag>
-			<x-help-text>输入你想显示的屏幕标题。</x-help-text>
-			<editable>是</editable>
+			<x-help-text>输入屏幕标题，如果你希望显示。</x-help-text>
+			<editable>YES</editable>
 			<default-association>
 				<association>
 					<!-- insert serialized association here -->
@@ -30,22 +30,22 @@
 			</default-association>
 			<limits>
 				<limit for="public.text" strict="YES">
-					<key>最大-长度</key>
+					<key>max-length</key>
 					<integer>50</integer>
 				</limit>
 			</limits>
 		</binding>
 		<binding type="attribute" container="none">
-			<binding-key>主要内容</binding-key>
+			<binding-key>mainText</binding-key>
 			<localized-name>
-				<string lang="en">主要内容</string>
+				<string lang="en">主文本</string>
 			</localized-name>
 			<content-types>
 				<identifier>public.text</identifier>
 			</content-types>
 			<help-tag></help-tag>
-			<x-help-text>输入主要屏幕内容。</x-help-text>
-			<editable>是</editable>
+			<x-help-text>输入屏幕主文本.</x-help-text>
+			<editable>YES</editable>
 			<default-association>
 				<association>
 					<!-- insert serialized association here -->
@@ -53,14 +53,14 @@
 			</default-association>
 			<limits>
 				<limit for="public.text" strict="YES">
-					<key>最大-长度</key>
+					<key>max-length</key>
 					<integer>1500</integer>
 				</limit>
 			</limits>
 		</binding>		
 		<binding type="attribute" container="none">
-			 <x-auto-instantiate>是</x-auto-instantiate>
-			<binding-key>链接菜单</binding-key>
+			 <x-auto-instantiate>YES</x-auto-instantiate>
+			<binding-key>linkMenu</binding-key>
 			<localized-name>
 				<string lang="en">链接菜单</string>
 			</localized-name>
@@ -70,7 +70,7 @@
 			</content-types>
 			<help-tag></help-tag>
 			<x-help-text>链接菜单</x-help-text>
-			<editable>是</editable>
+			<editable>YES</editable>
 			<default-association>
 				<association>
 					<!-- insert serialized association here -->
@@ -80,18 +80,18 @@
 			</limits>
 		</binding>
 		<binding type="attribute" container="none">
- 			<x-auto-instantiate>是</x-auto-instantiate>
-			<binding-key>电话拨盘菜单</binding-key>
+ 			<x-auto-instantiate>YES</x-auto-instantiate>
+			<binding-key>phoneDialMenu</binding-key>
 			<localized-name>
-				<string lang="en">电话拨盘菜单</string>
+				<string lang="en">电话转盘菜单</string>
 			</localized-name>
 			<content-types>
 				<identifier>pachyderm.phonedial.phonedial_menu</identifier>
 				<identifier>pachyderm.abstract.menu</identifier>
 			</content-types>
 			<help-tag></help-tag>
-			<x-help-text>电话拨盘菜单</x-help-text>
-			<editable>是</editable>
+			<x-help-text>电话转盘菜单</x-help-text>
+			<editable>YES</editable>
 			<default-association>
 				<association>
 					<!-- insert serialized association here -->
@@ -105,10 +105,10 @@
 	</binding-validators>
 	<user-interface>
 		<preferred-binding-ordering>
-			<binding-key>显示标题</binding-key>
-			<binding-key>主要内容</binding-key>
-			<binding-key>链接菜单</binding-key>
-			<binding-key>电话拨盘菜单</binding-key>
+			<binding-key>displayTitle</binding-key>
+			<binding-key>mainText</binding-key>
+			<binding-key>linkMenu</binding-key>
+			<binding-key>phoneDialMenu</binding-key>
 		</preferred-binding-ordering>
 	</user-interface>
 	<environment-support>
@@ -116,8 +116,8 @@
 			<identifier>pachyderm.flash-environment</identifier>
 			<min-size>{0.0, 0.0}</min-size>
 			<max-size>{0.0, 0.0}</max-size>
-			<auto-layout>不</auto-layout>
-			<accepts-children>不</accepts-children>
+			<auto-layout>NO</auto-layout>
+			<accepts-children>NO</accepts-children>
 			<resources>
 				<resource>phonedial.swf</resource>
 			</resources>

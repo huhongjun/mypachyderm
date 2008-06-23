@@ -2,51 +2,28 @@
 <component-definition>
 	<identification>
 		<localized-name>
-			<string lang="en">Phone Dial Menu</string>
+			<string lang="en">电话转盘链接菜单</string>
 		</localized-name>
 		<version>100</version>
 		<version-string>Version 1.0.0, Pachyderm 2.0</version-string>
-		<component-identifier>pachyderm.phonedial.phonedial_menu</component-identifier>
+		<component-identifier>pachyderm.phonedial.link_menu</component-identifier>
 		<conforming-identifiers>
 			<identifier>pachyderm.abstract.menu</identifier>
 		</conforming-identifiers>
 	</identification>
 	<binding-list>
-		<binding type="attribute" container="none">
-			<binding-key>text</binding-key>
-			<localized-name>
-				<string lang="en">Intro Text</string>
-			</localized-name>
-			<content-types>
-				<identifier>public.text</identifier>
-			</content-types>
-			<help-tag></help-tag>
-			<x-help-text>Type in your text for the Introduction Text. This text will reside in the center of the large circle by default.</x-help-text>
-			<editable>YES</editable>
-			<default-association>
-				<association>
-					<!-- insert serialized association here -->
-				</association>
-			</default-association>
-			<limits>
-				<limit for="public.text" strict="YES">
-					<key>max-length</key>
-					<integer>3000</integer>
-				</limit>
-			</limits>
-		</binding>		
 		<binding type="attribute" container="array">
 			 <x-auto-instantiate>YES</x-auto-instantiate>
 			<binding-key>item</binding-key>
 			<localized-name>
-				<string lang="en">Phone Dial Digit</string>
+				<string lang="en">链接项</string>
 			</localized-name>
 			<content-types>
-				<identifier>pachyderm.phonedial.phonedial_item</identifier>
+				<identifier>pachyderm.general.screen_link_item</identifier>
 				<identifier>pachyderm.abstract.item</identifier>
 			</content-types>
 			<help-tag></help-tag>
-			<x-help-text>Phone Dial Digit</x-help-text>
+			<x-help-text>屏幕链接项</x-help-text>
 			<editable>YES</editable>
 			<default-association>
 				<association>
@@ -54,11 +31,11 @@
 				</association>
 			</default-association>
 			<limits>
-				<limit for="pachyderm.phonedial.phonedial_item" strict="YES">
+				<limit for="pachyderm.general.screen_link_item" strict="YES">
 					<key>min-length</key>
-					<integer>10</integer>
+					<integer>0</integer>
 					<key>max-length</key>
-					<integer>10</integer>
+					<integer>2</integer>
 				</limit>
 			</limits>
 		</binding>
@@ -67,7 +44,6 @@
 	</binding-validators>
 	<user-interface>
 		<preferred-binding-ordering>
-			<binding-key>text</binding-key>
 			<binding-key>item</binding-key>
 		</preferred-binding-ordering>
 	</user-interface>
