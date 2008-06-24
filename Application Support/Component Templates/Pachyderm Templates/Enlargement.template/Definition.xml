@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<component-template>
+	<identification>
+		<localized-name>
+			<string lang="en">大图配文模板</string>
+		</localized-name>
+		<version>100</version>
+		<version-string>Version 1.0, Pachyderm 2.0</version-string>
+		<template-identifier>pachyderm.template.enlargement</template-identifier>
+		<people></people>
+	</identification>
+	<objects>
+		<component>
+			<identifier>1</identifier>
+			<description-identifier>pachyderm.enlargement</description-identifier>
+			<binding-list>
+			</binding-list>
+			<subcomponents>
+			</subcomponents>
+		</component>
+	</objects>
+</component-template>
+		
