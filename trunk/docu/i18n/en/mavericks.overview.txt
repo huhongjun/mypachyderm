@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<component-definition>
+	<identification>
+		<localized-name>
+			<string lang="en">Mavericks Overview Screen</string>
+		</localized-name>
+		<version>100</version>
+		<version-string>Version 1.0.0, Pachyderm 2.0</version-string>
+		<component-identifier>mavericks.overview</component-identifier>
+		<conforming-identifiers>
+			<identifier>pachyderm.abstract.screen</identifier>
+		</conforming-identifiers>
+	</identification>
+	<binding-list>
+		<binding type="attribute" container="none">
+			<binding-key>displayTitle</binding-key>
+			<localized-name>
+				<string lang="en">Display Title</string>
+			</localized-name>
+			<content-types>
+				<identifier>public.text</identifier>
+			</content-types>
+			<help-tag></help-tag>
+			<x-help-text>Enter your screen title as you wish it displayed.</x-help-text>
+			<editable>YES</editable>
+			<default-association>
+				<association>
+					<!-- insert serialized association here -->
+				</association>
+			</default-association>
+			<limits>
+				<limit for="public.text" strict="YES">
+					<key>max-length</key>
+					<integer>50</integer>
+				</limit>
+			</limits>
+		</binding>
+		<binding type="attribute" container="none">
+			<binding-key>mainMedia</binding-key>
+			<localized-name>
+				<string lang="en">Main Media</string>
+			</localized-name>
+			<content-types>
+				<identifier>mavericks.biography.imagelink</identifier>
+				<identifier>pachyderm.abstract.item</identifier>
+			</content-types>
+			<help-tag></help-tag>
+			<x-help-text>Select an image and a screen to link it to.</x-help-text>
+			<editable>YES</editable>
+			<default-association>
+				<association>
+					<!-- insert serialized association here -->
+				</association>
+			</default-association>
+			<limits>
+			</limits>
+		</binding>
+		<binding type="attribute" container="none">
+			<binding-key>mainText</binding-key>
+			<localized-name>
+				<string lang="en">Main Text</string>
+			</localized-name>
+			<content-types>
+				<identifier>public.text</identifier>
+			</content-types>
+			<help-tag></help-tag>
+			<x-help-text>Enter your main screen text.</x-help-text>
+			<editable>YES</editable>
+			<default-association>
+				<association>
+					<!-- insert serialized association here -->
+				</association>
+			</default-association>
+			<limits>
+				<limit for="public.text" strict="YES">
+					<key>max-length</key>
+					<integer>1500</integer>
+				</limit>
+			</limits>
+		</binding>		
+		<binding type="attribute" container="none">
+			<binding-key>secondaryText</binding-key>
+			<localized-name>
+				<string lang="en">Secondary Text (Transcript)</string>
+			</localized-name>
+			<content-types>
+				<identifier>public.text</identifier>
+			</content-types>
+			<help-tag></help-tag>
+			<x-help-text>Enter your secondary/transcript text.</x-help-text>
+			<editable>YES</editable>
+			<default-association>
+				<association>
+					<!-- insert serialized association here -->
+				</association>
+			</default-association>
+			<limits>
+				<limit for="public.text" strict="YES">
+					<key>max-length</key>
+					<integer>1500</integer>
+				</limit>
+			</limits>
+		</binding>		
+	</binding-list>
+	<binding-validators>
+	</binding-validators>
+	<user-interface>
+		<preferred-binding-ordering>
+			<binding-key>displayTitle</binding-key>
+			<binding-key>mainMedia</binding-key>
+			<binding-key>mainText</binding-key>
+			<binding-key>secondaryText</binding-key>
+		</preferred-binding-ordering>
+	</user-interface>
+	<environment-support>
+		<environment>
+			<identifier>pachyderm.flash-environment</identifier>
+			<min-size>{0.0, 0.0}</min-size>
+			<max-size>{0.0, 0.0}</max-size>
+			<auto-layout>NO</auto-layout>
+			<accepts-children>NO</accepts-children>
+			<resources>
+				<resource>mavericks-overview.swf</resource>
+			</resources>
+		</environment>
+	</environment-support>
+</component-definition>
