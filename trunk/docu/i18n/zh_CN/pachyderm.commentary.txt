@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<component-definition>
+	<identification>
+		<localized-name>
+			<string lang="en">注释屏幕</string>
+		</localized-name>
+		<version>100</version>
+		<version-string>Version 1.0.0, Pachyderm 2.0</version-string>
+		<component-identifier>pachyderm.commentary</component-identifier>
+		<conforming-identifiers>
+			<identifier>pachyderm.abstract.screen</identifier>
+		</conforming-identifiers>
+	</identification>
+	<binding-list>
+		<binding type="attribute" container="none">
+			 <x-auto-instantiate>YES</x-auto-instantiate>
+			<binding-key>compoundTitle</binding-key>
+			<localized-name>
+				<string lang="en">标题和副题</string>
+			</localized-name>
+			<content-types>
+				<identifier>pachyderm.general.compound_title</identifier>
+				<identifier>pachyderm.abstract.item</identifier>
+			</content-types>
+			<help-tag></help-tag>
+			<x-help-text>输入你想显示的屏幕标题和副题。</x-help-text>
+			<editable>YES</editable>
+			<default-association>
+				<association>
+					<!-- insert serialized association here -->
+				</association>
+			</default-association>
+			<limits>
+			</limits>
+		</binding>
+		<binding type="attribute" container="none">
+			 <x-auto-instantiate>YES</x-auto-instantiate>
+			<binding-key>mainMedia</binding-key>
+			<localized-name>
+				<string lang="en">主要媒体</string>
+			</localized-name>
+			<content-types>
+				<identifier>pachyderm.commentary.movie_media_item</identifier>
+				<identifier>pachyderm.abstract.item</identifier>
+			</content-types>
+			<help-tag></help-tag>
+			<x-help-text>影片媒体项目</x-help-text>
+			<editable>YES</editable>
+			<default-association>
+				<association>
+					<!-- insert serialized association here -->
+				</association>
+			</default-association>
+			<limits>
+			</limits>
+		</binding>
+		<binding type="attribute" container="none">
+			<binding-key>mainText</binding-key>
+			<localized-name>
+				<string lang="en">主要文本</string>
+			</localized-name>
+			<content-types>
+				<identifier>public.text</identifier>
+			</content-types>
+			<help-tag></help-tag>
+			<x-help-text>输入你的主要屏幕文本。</x-help-text>
+			<editable>YES</editable>
+			<default-association>
+				<association>
+					<!-- insert serialized association here -->
+				</association>
+			</default-association>
+			<limits>
+				<limit for="public.text" strict="YES">
+					<key>max-length</key>
+					<integer>1500</integer>
+				</limit>
+			</limits>
+		</binding>		
+		<binding type="attribute" container="array">
+			 <x-auto-instantiate>YES</x-auto-instantiate>
+			<binding-key>mediaLinkItem</binding-key>
+			<localized-name>
+				<string lang="en">媒体链接</string>
+			</localized-name>
+			<content-types>
+				<identifier>pachyderm.commentary.media_menu_item</identifier>
+				<identifier>pachyderm.abstract.item</identifier>
+			</content-types>
+			<help-tag></help-tag>
+			<x-help-text>选择一个图片。</x-help-text>
+			<editable>YES</editable>
+			<default-association>
+				<association>
+					<!-- insert serialized association here -->
+				</association>
+			</default-association>
+			<limits>
+				<limit for="pachyderm.commentary.media_menu_item" strict="YES">
+					<key>min-length</key>
+					<integer>3</integer>
+					<key>max-length</key>
+					<integer>3</integer>
+				</limit>
+			</limits>
+		</binding>
+	</binding-list>
+	<binding-validators>
+	</binding-validators>
+	<user-interface>
+		<preferred-binding-ordering>
+			<binding-key>compoundTitle</binding-key>
+			<binding-key>mainMedia</binding-key>
+			<binding-key>mainText</binding-key>
+			<binding-key>mediaLinkItem</binding-key>
+		</preferred-binding-ordering>
+	</user-interface>
+	<environment-support>
+		<environment>
+			<identifier>pachyderm.flash-environment</identifier>
+			<min-size>{0.0, 0.0}</min-size>
+			<max-size>{0.0, 0.0}</max-size>
+			<auto-layout>NO</auto-layout>
+			<accepts-children>NO</accepts-children>
+			<resources>
+				<resource>commentary.swf</resource>
+			</resources>
+		</environment>
+	</environment-support>
+</component-definition>
