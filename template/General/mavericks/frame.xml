@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<frame>
+	<text_group>
+		<text layer='0' txt='SFMOMA' font="Tahoma" size="10" color="255" x="434" y="3" width="394.7" height="24.9" link=""/>
+		<text layer="1" txt="testing" font="Tahoma" size="24" color="255" x="498" y="26" width="394.7" height="24.9" link=""/>
+	</text_group>
+	<image_group>
+		<image layer="0" file="http://ccw.arts.ubc.ca/root_auth/image1.jpg" x="625" y="5" width="142" height="33" link=""/>
+		<image layer="1" file="http://ccw.arts.ubc.ca/root_auth/image2.jpg" x="128" y="3" width="238" height="53" link="http://"/>
+	</image_group>
+</frame>

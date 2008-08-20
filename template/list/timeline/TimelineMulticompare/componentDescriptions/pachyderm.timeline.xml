@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<component-definition>
+	<identification>
+		<localized-name>
+			<string lang="en">Timeline Comparison Screen</string>
+		</localized-name>
+		<version>100</version>
+		<version-string>Version 1.0.0, Pachyderm 2.0</version-string>
+		<component-identifier>pachyderm.timeline</component-identifier>
+		<conforming-identifiers>
+			<identifier>pachyderm.abstract.screen</identifier>
+		</conforming-identifiers>
+	</identification>
+	<binding-list>
+		<binding type="attribute" container="none">
+			<binding-key>displayTitle</binding-key>
+			<localized-name>
+				<string lang="en">Display Title</string>
+			</localized-name>
+			<content-types>
+				<identifier>public.text</identifier>
+			</content-types>
+			<help-tag></help-tag>
+			<x-help-text>Enter your screen title as you wish it displayed.</x-help-text>
+			<editable>YES</editable>
+			<default-association>
+				<association>
+					<!-- insert serialized association here -->
+				</association>
+			</default-association>
+			<limits>
+				<limit for="public.text" strict="YES">
+					<key>max-length</key>
+					<integer>50</integer>
+				</limit>
+			</limits>
+		</binding>
+		<binding type="attribute" container="none">
+			<binding-key>backgroundImage</binding-key>
+			<localized-name>
+				<string lang="en">Background Image</string>
+			</localized-name>
+			<content-types>
+				<identifier>public.image</identifier>
+				<identifier>pachyderm.resource</identifier>
+			</content-types>
+			<help-tag></help-tag>
+			<x-help-text>Choose the image for the background.</x-help-text>
+			<editable>YES</editable>
+			<default-association>
+				<association>
+					<!-- insert serialized association here -->
+				</association>
+			</default-association>
+			<limits>
+				<limit for="public.image" strict="YES">
+					<key>min-size</key>
+					<size>{900, 900}</size>
+					<key>max-size</key>
+					<size>{900, 900}</size>
+ 				</limit>
+			</limits>
+		</binding>
+		<binding type="attribute" container="none">
+			<binding-key>dateStart</binding-key>
+			<localized-name>
+				<string lang="en">Timeline Starting Date</string>
+			</localized-name>
+			<content-types>
+				<identifier>public.text</identifier>
+			</content-types>
+			<help-tag></help-tag>
+			<x-help-text>Enter the date where you wish the timeline to begin.</x-help-text>
+			<editable>YES</editable>
+			<default-association>
+				<association>
+					<!-- insert serialized association here -->
+				</association>
+			</default-association>
+			<limits>
+				<limit for="public.text" strict="YES">
+					<key>max-length</key>
+					<integer>20</integer>
+				</limit>
+			</limits>
+		</binding>
+		<binding type="attribute" container="none">
+			<binding-key>dateUnit</binding-key>
+			<localized-name>
+				<string lang="en">Date Units</string>
+			</localized-name>
+			<content-types>
+				<identifier>public.text</identifier>
+			</content-types>
+			<help-tag></help-tag>
+			<x-help-text>Enter the units for the date field.</x-help-text>
+			<editable>YES</editable>
+			<default-association>
+				<association>
+					<!-- insert serialized association here -->
+				</association>
+			</default-association>
+			<limits>
+				<limit for="public.text" strict="YES">
+					<key>max-length</key>
+					<integer>20</integer>
+				</limit>
+			</limits>
+		</binding>
+		<binding type="attribute" container="none">
+			<binding-key>dateInitial</binding-key>
+			<localized-name>
+				<string lang="en">Initial Starting Date</string>
+			</localized-name>
+			<content-types>
+				<identifier>public.text</identifier>
+			</content-types>
+			<help-tag></help-tag>
+			<x-help-text>Enter the date to which you wish the screen to navigate on initialization.</x-help-text>
+			<editable>YES</editable>
+			<default-association>
+				<association>
+					<!-- insert serialized association here -->
+				</association>
+			</default-association>
+			<limits>
+				<limit for="public.text" strict="YES">
+					<key>max-length</key>
+					<integer>20</integer>
+				</limit>
+			</limits>
+		</binding>
+		<binding type="attribute" container="none">
+			 <x-auto-instantiate>YES</x-auto-instantiate>
+			<binding-key>collection</binding-key>
+			<localized-name>
+				<string lang="en">Timeline Comparison Collection</string>
+			</localized-name>
+			<content-types>
+				<identifier>pachyderm.timeline.collection</identifier>
+				<identifier>pachyderm.abstract.menu</identifier>
+			</content-types>
+			<help-tag></help-tag>
+			<x-help-text>Timeline Comparison Collection</x-help-text>
+			<editable>YES</editable>
+			<default-association>
+				<association>
+					<!-- insert serialized association here -->
+				</association>
+			</default-association>
+			<limits>
+			</limits>
+		</binding>
+		<binding type="attribute" container="none">
+ 			<x-auto-instantiate>YES</x-auto-instantiate>
+			<binding-key>dictionary</binding-key>
+			<localized-name>
+				<string lang="en">Keyword Dictionary</string>
+			</localized-name>
+			<content-types>
+				<identifier>pachyderm.general.keyword_dictionary</identifier>
+				<identifier>pachyderm.abstract.menu</identifier>
+			</content-types>
+			<help-tag></help-tag>
+			<x-help-text>Keyword Dictionary</x-help-text>
+			<editable>YES</editable>
+			<default-association>
+				<association>
+					<!-- insert serialized association here -->
+				</association>
+			</default-association>
+			<limits>
+			</limits>
+		</binding>
+	</binding-list>
+	<binding-validators>
+	</binding-validators>
+	<user-interface>
+		<preferred-binding-ordering>
+			<binding-key>displayTitle</binding-key>
+			<binding-key>backgroundImage</binding-key>
+			<binding-key>dateStart</binding-key>
+			<binding-key>dateUnit</binding-key>
+			<binding-key>dateInitial</binding-key>
+			<binding-key>collection</binding-key>
+			<binding-key>dictionary</binding-key>
+		</preferred-binding-ordering>
+	</user-interface>
+	<environment-support>
+		<environment>
+			<identifier>pachyderm.flash-environment</identifier>
+			<min-size>{0.0, 0.0}</min-size>
+			<max-size>{0.0, 0.0}</max-size>
+			<auto-layout>NO</auto-layout>
+			<accepts-children>NO</accepts-children>
+			<resources>
+				<resource>timeline.swf</resource>
+				<resource>multi_comparison.swf</resource>
+				<resource>dual_comparison.swf</resource>
+			</resources>
+		</environment>
+	</environment-support>
+</component-definition>

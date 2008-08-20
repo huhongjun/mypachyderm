@@ -1,0 +1,16 @@
+<!--  
+'timer' :: number of seconds between each image transition
+'order' :: how you want your images displayed. choose either 'sequential' or 'random'
+'loop' :: if the slide show is in sequential mode, this stops the show at the last image (use 'yes' for looping, 'no' for not)
+"fadeTime" :: velocity of image crossfade. Increment for faster fades, decrement for slower
+-->
+<gallery timer="7" order="sequential" looping="yes" fadetime="5">
+<image path="images/calliandra.jpg" />
+<image path="images/dombeya.jpg" />
+<image path="images/strelitzia.jpg" />
+<image path="images/trensa.jpg" />
+<image path="images/treeflower.jpg" />
+<image path="images/bellflowers.jpg" />
+<image path="images/cordyline.jpg" />
+<image path="images/forsythia.jpg" />
+</gallery>

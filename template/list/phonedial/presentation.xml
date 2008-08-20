@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<presentation id="00-64-880640031643000125-16-92-115-29-2-7757-115">
+	<description>
+		<title>huhj</title>
+		<creation_date>2008-05-16</creation_date>
+		<last_modified>2008-05-16</last_modified>
+		<author>Pachyderm</author>
+		<owner>Pachyderm</owner>
+		<starting_screen>00-64-8806400316435000125-16-92-115-29-2-7757-115</starting_screen>
+	</description>
+	<content>
+		<screen id="00-64-8806400316435000125-16-92-115-29-2-7757-115" template="phonedial.swf" xml="00-64-8806400316435000125-16-92-115-29-2-7757-115.xml" />
+		<screen id="00-64-8806400316476000125-16-92-115-29-2-7757-115" template="slider.swf" xml="00-64-8806400316476000125-16-92-115-29-2-7757-115.xml" />
+	</content>
+</presentation>
+

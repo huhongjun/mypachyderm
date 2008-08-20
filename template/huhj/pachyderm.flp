@@ -1,0 +1,12 @@
+﻿<flash_project name="pachyderm" version="1">
+    <project_file path="./aspects.fla" filetype="fla" profile="" />
+    <project_file path="./FEImageBox.fla" filetype="fla" profile="" />
+    <project_file path="./FETextBox.fla" filetype="fla" profile="" />
+    <project_file path="./iconization.xml" filetype="xml" />
+    <project_file path="./index.html" filetype="html" />
+    <project_file path="./presentation.xml" filetype="xml" />
+    <project_file path="./root.fla" filetype="fla" profile="" />
+    <project_file path="./root_border.fla" filetype="fla" profile="" />
+    <project_file path="./root_border.xml" filetype="xml" />
+    <project_file path="./sounds.fla" filetype="fla" profile="" />
+</flash_project>

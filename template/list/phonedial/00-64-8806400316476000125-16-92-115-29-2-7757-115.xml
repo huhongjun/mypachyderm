@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<object id="00-64-8806400316476000125-16-92-115-29-2-7757-115">
+	<description>
+		<title>Sakai ??</title>
+		<creation_date>2008-05-16</creation_date>
+		<last_modified>2008-05-16</last_modified>
+	</description>
+	<content>
+		<component type="pachyderm.slider">
+			<data_element name="displayTitle" type="public.text">Sakai歷史</data_element>
+			<component type="pachyderm.slider.media_item" index="1" name="sliderMediaItem">
+				<data_element name="title" type="public.text">巨頭的盛宴</data_element>
+				<data_element name="image" type="pachyderm.resource">47-320x240.swf</data_element>
+				<data_element name="movie" type="public.text" />
+				<data_element name="link" type="public.text" />
+				<data_element name="caption" type="public.text">未來之路</data_element>
+				<data_element name="text" type="public.text">現在開始</data_element>
+			</component>
+			<component type="pachyderm.slider.media_item" index="2" name="sliderMediaItem">
+				<data_element name="title" type="public.text">教育的覺醒</data_element>
+				<data_element name="image" type="public.text" />
+				<data_element name="movie" type="public.text" />
+				<data_element name="link" type="public.text" />
+				<data_element name="caption" type="public.text" />
+				<data_element name="text" type="public.text" />
+			</component>
+			<component type="pachyderm.slider.media_item" index="3" name="sliderMediaItem">
+				<data_element name="title" type="public.text" />
+				<data_element name="image" type="public.text" />
+				<data_element name="movie" type="public.text" />
+				<data_element name="link" type="public.text" />
+				<data_element name="caption" type="public.text" />
+				<data_element name="text" type="public.text" />
+			</component>
+			<component type="pachyderm.slider.media_item" index="4" name="sliderMediaItem">
+				<data_element name="title" type="public.text" />
+				<data_element name="image" type="public.text" />
+				<data_element name="movie" type="public.text" />
+				<data_element name="link" type="public.text" />
+				<data_element name="caption" type="public.text" />
+				<data_element name="text" type="public.text" />
+			</component>
+			<component type="pachyderm.slider.media_item" index="5" name="sliderMediaItem">
+				<data_element name="title" type="public.text" />
+				<data_element name="image" type="public.text" />
+				<data_element name="movie" type="public.text" />
+				<data_element name="link" type="public.text" />
+				<data_element name="caption" type="public.text" />
+				<data_element name="text" type="public.text" />
+			</component>
+			<component type="pachyderm.slider.media_item" index="6" name="sliderMediaItem">
+				<data_element name="title" type="public.text" />
+				<data_element name="image" type="public.text" />
+				<data_element name="movie" type="public.text" />
+				<data_element name="link" type="public.text" />
+				<data_element name="caption" type="public.text" />
+				<data_element name="text" type="public.text" />
+			</component>
+			<component type="pachyderm.slider.media_item" index="7" name="sliderMediaItem">
+				<data_element name="title" type="public.text" />
+				<data_element name="image" type="public.text" />
+				<data_element name="movie" type="public.text" />
+				<data_element name="link" type="public.text" />
+				<data_element name="caption" type="public.text" />
+				<data_element name="text" type="public.text" />
+			</component>
+			<component type="pachyderm.slider.media_item" index="8" name="sliderMediaItem">
+				<data_element name="title" type="public.text" />
+				<data_element name="image" type="public.text" />
+				<data_element name="movie" type="public.text" />
+				<data_element name="link" type="public.text" />
+				<data_element name="caption" type="public.text" />
+				<data_element name="text" type="public.text" />
+			</component>
+			<component type="pachyderm.slider.media_item" index="9" name="sliderMediaItem">
+				<data_element name="title" type="public.text" />
+				<data_element name="image" type="public.text" />
+				<data_element name="movie" type="public.text" />
+				<data_element name="link" type="public.text" />
+				<data_element name="caption" type="public.text" />
+				<data_element name="text" type="public.text" />
+			</component>
+			<component type="pachyderm.slider.media_item" index="10" name="sliderMediaItem">
+				<data_element name="title" type="public.text" />
+				<data_element name="image" type="public.text" />
+				<data_element name="movie" type="public.text" />
+				<data_element name="link" type="public.text" />
+				<data_element name="caption" type="public.text" />
+				<data_element name="text" type="public.text" />
+			</component>
+			<component type="pachyderm.slider.media_item" index="11" name="sliderMediaItem">
+				<data_element name="title" type="public.text" />
+				<data_element name="image" type="public.text" />
+				<data_element name="movie" type="public.text" />
+				<data_element name="link" type="public.text" />
+				<data_element name="caption" type="public.text" />
+				<data_element name="text" type="public.text" />
+			</component>
+			<component type="pachyderm.slider.media_item" index="12" name="sliderMediaItem">
+				<data_element name="title" type="public.text">Future roadmap</data_element>
+				<data_element name="image" type="public.text" />
+				<data_element name="movie" type="public.text" />
+				<data_element name="link" type="public.text" />
+				<data_element name="caption" type="public.text" />
+				<data_element name="text" type="public.text" />
+			</component>
+		</component>
+	</content>
+</object>
+

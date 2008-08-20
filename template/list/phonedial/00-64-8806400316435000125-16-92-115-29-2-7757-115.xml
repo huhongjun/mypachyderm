@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<object id="00-64-8806400316435000125-16-92-115-29-2-7757-115">
+	<description>
+		<title>???</title>
+		<creation_date>2008-05-16</creation_date>
+		<last_modified>2008-05-16</last_modified>
+	</description>
+	<content>
+		<component type="pachyderm.phonedial">
+			<data_element name="displayTitle" type="public.text">Sakai 入門教程</data_element>
+			<data_element name="mainText" type="public.text">關于Sakai</data_element>
+			<component type="pachyderm.phonedial.link_menu" name="linkMenu">
+				<component type="pachyderm.general.screen_link_item" index="1" name="item">
+					<data_element name="linkText" type="public.text">更多</data_element>
+					<data_element name="screenLink" type="public.text">http://www.edlt.com</data_element>
+				</component>
+				<component type="pachyderm.general.screen_link_item" index="2" name="item">
+					<data_element name="linkText" type="public.text">官方</data_element>
+					<data_element name="screenLink" type="public.text">http://www.sakaiproject.org</data_element>
+				</component>
+			</component>
+			<component type="pachyderm.phonedial.phonedial_menu" name="phoneDialMenu">
+				<data_element name="text" type="public.text">企業級開源學習平臺 - Sakai</data_element>
+				<component type="pachyderm.phonedial.phonedial_item" index="1" name="item">
+					<data_element name="thumbnail" type="pachyderm.resource">47-72x72.swf</data_element>
+					<data_element name="rollover" type="public.text" />
+					<data_element name="caption" type="public.text">開蘇體驗</data_element>
+					<data_element name="link" type="pachyderm.screen">00-64-8806400316476000125-16-92-115-29-2-7757-115</data_element>
+				</component>
+				<component type="pachyderm.phonedial.phonedial_item" index="2" name="item">
+					<data_element name="thumbnail" type="public.text" />
+					<data_element name="rollover" type="public.text" />
+					<data_element name="caption" type="public.text" />
+					<data_element name="link" type="public.text" />
+				</component>
+				<component type="pachyderm.phonedial.phonedial_item" index="3" name="item">
+					<data_element name="thumbnail" type="public.text" />
+					<data_element name="rollover" type="public.text" />
+					<data_element name="caption" type="public.text" />
+					<data_element name="link" type="public.text" />
+				</component>
+				<component type="pachyderm.phonedial.phonedial_item" index="4" name="item">
+					<data_element name="thumbnail" type="public.text" />
+					<data_element name="rollover" type="public.text" />
+					<data_element name="caption" type="public.text" />
+					<data_element name="link" type="public.text" />
+				</component>
+				<component type="pachyderm.phonedial.phonedial_item" index="5" name="item">
+					<data_element name="thumbnail" type="public.text" />
+					<data_element name="rollover" type="public.text" />
+					<data_element name="caption" type="public.text" />
+					<data_element name="link" type="public.text" />
+				</component>
+				<component type="pachyderm.phonedial.phonedial_item" index="6" name="item">
+					<data_element name="thumbnail" type="public.text" />
+					<data_element name="rollover" type="public.text" />
+					<data_element name="caption" type="public.text" />
+					<data_element name="link" type="public.text" />
+				</component>
+				<component type="pachyderm.phonedial.phonedial_item" index="7" name="item">
+					<data_element name="thumbnail" type="public.text" />
+					<data_element name="rollover" type="public.text" />
+					<data_element name="caption" type="public.text" />
+					<data_element name="link" type="public.text" />
+				</component>
+				<component type="pachyderm.phonedial.phonedial_item" index="8" name="item">
+					<data_element name="thumbnail" type="public.text" />
+					<data_element name="rollover" type="public.text" />
+					<data_element name="caption" type="public.text" />
+					<data_element name="link" type="public.text" />
+				</component>
+				<component type="pachyderm.phonedial.phonedial_item" index="9" name="item">
+					<data_element name="thumbnail" type="public.text" />
+					<data_element name="rollover" type="public.text" />
+					<data_element name="caption" type="public.text" />
+					<data_element name="link" type="public.text" />
+				</component>
+				<component type="pachyderm.phonedial.phonedial_item" index="10" name="item">
+					<data_element name="thumbnail" type="public.text" />
+					<data_element name="rollover" type="public.text" />
+					<data_element name="caption" type="public.text" />
+					<data_element name="link" type="public.text" />
+				</component>
+			</component>
+		</component>
+	</content>
+</object>
+
