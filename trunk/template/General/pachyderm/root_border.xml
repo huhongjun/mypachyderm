@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<frame bg_color="0xa7bccc" nav_color="0xe8a600" name="Pachyderm"> 
+	<text_group>
+		<text 	
+				layer="" 
+				x="" 
+				y="" 
+				width="" 
+				height="" 
+				txt="" 
+				font="" 
+				size="" 
+				color="" 
+				bold="" 
+				italic="" 
+				underline="" 
+				link="" 
+		/>
+	</text_group> 
+	<image_group> 
+		<image 	
+				layer="0" 
+				x="26" 
+				y="14" 
+				width="125" 
+				height="35" 
+				file="root_assets/PachyTemplateLogo.swf" 
+				link="" 
+		/>
+		<image 	
+				layer="" 
+				x="" 
+				y="" 
+				width="" 
+				height="" 
+				file="" 
+				link="" 
+		/>
+	</image_group>
+</frame>

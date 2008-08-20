@@ -1,0 +1,10 @@
+Flash Resources
+
+Using XPath in Flash
+http://www.informit.com/articles/article.asp?p=169633
+
+Essential Actionscript 2.0 (Book links)
+http://moock.org/eas2/
+
+List of XPath methods
+http://www.xfactorstudio.com/Actionscript/AS1/XPath/

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<object id="00-87-21161500316430000117-35-1223-1271198416-64">
+	<description>
+		<title>Home</title>
+		<creation_date>2007-04-10</creation_date>
+		<last_modified>2007-04-10</last_modified>
+	</description>
+	<content>
+		<component type="pachyderm.aspects">
+			<data_element name="displayTitle" type="public.text">This is my presentation!</data_element>
+			<component type="pachyderm.aspects.media_item" index="1" name="mediaItem">
+				<component type="pachyderm.aspects.image_item" name="imageItem">
+					<data_element name="image" type="pachyderm.resource">bio02301-320x200.swf</data_element>
+					<data_element name="thumbnail" type="public.text" />
+				</component>
+				<data_element name="movie" type="public.text" />
+				<data_element name="imageCaption" type="public.text" />
+				<data_element name="thumbCaption" type="public.text" />
+				<data_element name="text" type="public.text" />
+			</component>
+			<component type="pachyderm.aspects.media_item" index="2" name="mediaItem">
+				<component type="pachyderm.aspects.image_item" name="imageItem">
+					<data_element name="image" type="public.text" />
+					<data_element name="thumbnail" type="public.text" />
+				</component>
+				<data_element name="movie" type="public.text" />
+				<data_element name="imageCaption" type="public.text" />
+				<data_element name="thumbCaption" type="public.text" />
+				<data_element name="text" type="public.text" />
+			</component>
+			<component type="pachyderm.aspects.media_item" index="3" name="mediaItem">
+				<component type="pachyderm.aspects.image_item" name="imageItem">
+					<data_element name="image" type="public.text" />
+					<data_element name="thumbnail" type="public.text" />
+				</component>
+				<data_element name="movie" type="public.text" />
+				<data_element name="imageCaption" type="public.text" />
+				<data_element name="thumbCaption" type="public.text" />
+				<data_element name="text" type="public.text" />
+			</component>
+			<component type="pachyderm.aspects.media_item" index="4" name="mediaItem">
+				<component type="pachyderm.aspects.image_item" name="imageItem">
+					<data_element name="image" type="public.text" />
+					<data_element name="thumbnail" type="public.text" />
+				</component>
+				<data_element name="movie" type="public.text" />
+				<data_element name="imageCaption" type="public.text" />
+				<data_element name="thumbCaption" type="public.text" />
+				<data_element name="text" type="public.text" />
+			</component>
+			<component type="pachyderm.aspects.media_item" index="5" name="mediaItem">
+				<component type="pachyderm.aspects.image_item" name="imageItem">
+					<data_element name="image" type="public.text" />
+					<data_element name="thumbnail" type="public.text" />
+				</component>
+				<data_element name="movie" type="public.text" />
+				<data_element name="imageCaption" type="public.text" />
+				<data_element name="thumbCaption" type="public.text" />
+				<data_element name="text" type="public.text" />
+			</component>
+			<component type="pachyderm.aspects.media_item" index="6" name="mediaItem">
+				<component type="pachyderm.aspects.image_item" name="imageItem">
+					<data_element name="image" type="public.text" />
+					<data_element name="thumbnail" type="public.text" />
+				</component>
+				<data_element name="movie" type="public.text" />
+				<data_element name="imageCaption" type="public.text" />
+				<data_element name="thumbCaption" type="public.text" />
+				<data_element name="text" type="public.text" />
+			</component>
+		</component>
+	</content>
+</object>
+

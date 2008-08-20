@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<presentation id="00-87-2116150031642000117-35-1223-1271198416-64">
+	<description>
+		<title>Test Presentation</title>
+		<creation_date>2007-04-10</creation_date>
+		<last_modified>2007-05-01</last_modified>
+		<author>Pachyderm</author>
+		<owner>Pachyderm</owner>
+		<starting_screen>00-87-21161500316430000117-35-1223-1271198416-64</starting_screen>
+	</description>
+	<content>
+		<screen id="00-87-21161500316430000117-35-1223-1271198416-64" template="aspects.swf" xml="00-87-21161500316430000117-35-1223-1271198416-64.xml" />
+	</content>
+</presentation>
+

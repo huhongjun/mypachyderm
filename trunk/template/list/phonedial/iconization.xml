@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<iconization id="55">
+	<description>
+		...
+	</description>
+	<content>
+		<icon id="100" template="generic" imgname="icons/general.jpg" />
+		<icon id="111" template="url" imgname="icons/url.jpg" />
+		<icon id="103" template="enlargement.swf" imgname="icons/enlargement.jpg" />
+		<icon id="104" template="mediafocus.swf" imgname="icons/mediafocus.jpg" />
+		<icon id="106" template="zoom.swf" imgname="icons/zoom.jpg" />
+
+	</content>
+</iconization>

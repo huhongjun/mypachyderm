@@ -1,0 +1,37 @@
+READ ME For Pachyderm Template Package 'Full Screen SWF Player'
+Released for Pachdyerm version 2.0
+Date: November 6th, 2007
+
+The contents of this package are as follows:
+
+
+- componentDescriptions/
+
+	This directory holds both the XML component descriptions, and a sql file to run against your 'compdescription' table that will load the appropriate definitions into your instance.
+
+	
+- fla/
+
+	This directory holds the raw fla files used to create the template. You don't need to install this, as you have a compiled swf in the /swf folder
+
+	
+- legends/
+
+	The image(s) here are the legends used in authoring, and need to be copied into your $webroot/pachyderm/images/screen-legends/ directory.
+
+	
+- swf/
+
+	The file(s) in this directory must be copied to $webroot/pachyderm/templates and are the actual compiled swf's used in the published presentation.
+	
+	
+- templates/
+	
+	The template package(s) here must be copied into your $XML/Component Templates/ directory (/Library/Application Suppoprt/Pachyderm/Component Templates/ on Mac OS X). These files instantiate a new screen.
+
+
+- thumbnails/
+	
+	The image(s) here are the thumbnails used in viewing screen options from a list or the list of screens in a presentaiton, and must be copied into your $webroot/pachyderm/images/screen-thumbnails/ directory.
+
+

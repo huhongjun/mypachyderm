@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<frame bg_color='0XA7BCCC'>
+	<text_group>
+		<text layer='0' txt='' font='Arial Narrow' size='28' color='0xFFFFFF' x='63.3' y='9.5' width='386.75' height='36.55' link='' />
+	</text_group>
+	<image_group>
+		<image layer='2' file='root_assets/PachyTemplateLogo.swf' x='20' y='5.2' width='100' height='27' link='' />
+	</image_group>
+	<navigation>
+		<nav layer='0' file='root_assets/BetaArrow.swf' x='712.4' y='6.3' width='44' height='44' link='back' />
+	</navigation>
+</frame>

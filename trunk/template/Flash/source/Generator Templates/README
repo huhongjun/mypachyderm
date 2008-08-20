@@ -1,0 +1,7 @@
+These .fla files are used to create the .swt template files for use by jGenerator.
+
+jpeg_tombstone.fla - the "live" Pachyderm 2.0 template
+
+jpeg_tombstone_mav.fla - slight modification for Mavericks (use red rather than orange)
+
+Others: various experiments we went through while trying to get tombstones to properly display. Added only for completion.

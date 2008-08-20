@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<iconization id="55">
+	<description>
+		...
+	</description>
+	<content>
+		<icon id="105" template="generic" imgname="icons/link.jpg" />
+		<icon id="111" template="url" imgname="icons/url.jpg" />
+		<icon id="101" template="bookviewer.swf" imgname="icons/bookviewer.jpg" />
+		<icon id="102" template="collaborationweb.swf" imgname="icons/collaborationweb.jpg" />
+		<icon id="103" template="enlargement.swf" imgname="icons/enlargement.jpg" />
+		<icon id="104" template="videofocus.swf" imgname="icons/videofocus.jpg" />
+		<icon id="105" template="zoomview.swf" imgname="icons/zoomview.jpg" />
+
+	</content>
+</iconization>

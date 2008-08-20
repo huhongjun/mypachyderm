@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<frame bg_color='0XCFCABA'>
+	<text_group>
+<!--		<text layer='4' txt='Home' font='Helvetica' size='18' color='0x000000' x='50' y='515' width='386.75' height='36.55' link='http://www.glenbow.org/mavericks/' />
+		<text layer='5' txt='English/Francais' font='Helvetica' size='18' color='0x000000' x='150' y='515' width='386.75' height='36.55' link='http://www.glenbow.org/mavericks/' />
+		<text layer='6' txt='Teacher Resources' font='Helvetica' size='18' color='0x000000' x='325' y='515' width='386.75' height='36.55' link='http://www.glenbow.org/mavericks/teacher/english/index.html' />
+		<text layer='7' txt='Credits' font='Helvetica' size='18' color='0x000000' x='535' y='515' width='386.75' height='36.55' link='http://www.glenbow.org/mavericks/credits.htm' />
+		<text layer='8' txt='Comments' font='Helvetica' size='18' color='0x000000' x='645' y='515' width='386.75' height='36.55' link='http://www.glenbow.org/mavericks/comments.htm' />
+-->
+	</text_group>
+	<image_group>
+		<image layer='1' file='root_assets/glenbowlogo.swf' x='40' y='10' width='150' height='27.3' link='http://www.glenbow.org' />
+		<image layer='2' file='root_assets/maverickslogo.swf' x='295' y='0' width='180.9' height='50' link='http://www.glenbow.org/mavericks/english/menu.html' />
+	</image_group>
+	<navigation>
+		<nav layer='0' file='root_assets/mav_backarrow.swf' x='700' y='6.3' width='44' height='44' link='back' />
+	</navigation>
+</frame>
