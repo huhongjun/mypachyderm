@@ -1,0 +1,45 @@
+<settings xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                      http://maven.apache.org/xsd/settings-1.0.0.xsd">
+	<pluginGroups>
+		<pluginGroup>org.objectstyle.woproject.maven2</pluginGroup>
+	</pluginGroups>
+
+	<profiles>
+		<profile>
+			<id>default</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			<pluginRepositories>
+				<pluginRepository>
+					<id>mdimension.releases</id>
+					<name>MDimension Releases Repository</name>
+					<url>
+						http://webobjects.mdimension.com/maven2/releases
+					</url>
+					<releases>
+						<enabled>true</enabled>
+					</releases>
+					<snapshots>
+						<enabled>false</enabled>
+					</snapshots>
+				</pluginRepository>
+				<pluginRepository>
+					<id>mdimension.snapshots</id>
+					<name>MDimension Snapshots Repository</name>
+					<url>
+						http://webobjects.mdimension.com/maven2/snapshots
+					</url>
+					<releases>
+						<enabled>false</enabled>
+					</releases>
+					<snapshots>
+						<enabled>true</enabled>
+					</snapshots>
+				</pluginRepository>
+			</pluginRepositories>
+		</profile>
+	</profiles>
+</settings>
